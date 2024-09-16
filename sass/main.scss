@@ -1,0 +1,17 @@
+/* scss/
+
+abstracts/       # Variáveis, mixins, funções
+base/            # Reset, Normalize e estilos globais
+components/      # Componentes individuais (botões, cards, etc.)
+layout/          # Layouts da página (header, footer, grid)
+pages/           # Estilos específicos de páginas (home, about, etc.)
+themes/          # Temas de cores ou variações de estilo
+vendors/         # Bibliotecas ou estilos de terceiros
+main.scss        # Arquivo principal que importa todos os outros
+ */
+@import "abstracts/variables";
+@import "base/_reset.scss";
+@import "base/_typography.scss";
+@import "layout/layout";
+@import "layout/responsive";
+@import "components/card";

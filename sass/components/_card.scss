@@ -1,0 +1,72 @@
+body,
+main {
+  background-color: $sectionBgColor;
+}
+
+.card {
+  background-color: $cardBgColor;
+  border-radius: $cardBorderRadius;
+  padding: $bigSpacing;
+  max-width: 33.6rem;
+  box-shadow: $normalSpacing $normalSpacing 0 rgba($color: #000000, $alpha: 1);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__img {
+    max-width: 100%;
+    border-radius: $cardImgBorderRadius;
+    margin-bottom: $bigSpacing;
+  }
+  &__text-area {
+    padding: 0;
+  }
+  &__tag {
+    background-color: $sectionBgColor;
+    display: inline-block;
+    border-radius: 0.4rem;
+    padding: $smallSpacing $mediumSpacing;
+    font-weight: $boldFontWeight;
+    font-size: $smallFontSize;
+    margin-bottom: $normalSpacing;
+  }
+  &__date {
+    font-size: $smallFontSize;
+    margin-bottom: $bigSpacing;
+    font-size: $smallFontSize;
+    color: $darkGray;
+  }
+  &__title {
+    font-size: $titleFontSize;
+    font-weight: $boldFontWeight;
+    margin-bottom: $bigSpacing;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $sectionBgColor;
+    }
+  }
+
+  &__description {
+    font-size: $smallFontSize;
+    color: $lightGray;
+    margin-bottom: $bigSpacing;
+  }
+  &__author-box {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+  }
+  &__author-img {
+    max-width: 3.2rem;
+    margin-right: $mediumSpacing;
+  }
+  &__author-name {
+    font-size: $smallFontSize;
+    font-weight: $boldFontWeight;
+  }
+}

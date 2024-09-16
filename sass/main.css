@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* scss/
+
+abstracts/       # Variáveis, mixins, funções
+base/            # Reset, Normalize e estilos globais
+components/      # Componentes individuais (botões, cards, etc.)
+layout/          # Layouts da página (header, footer, grid)
+pages/           # Estilos específicos de páginas (home, about, etc.)
+themes/          # Temas de cores ou variações de estilo
+vendors/         # Bibliotecas ou estilos de terceiros
+main.scss        # Arquivo principal que importa todos os outros
+ */
+/* COLORS */
+/* FONT VARIABLES */
+/* SPACING SYSTEM */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+@media (max-height: 33.75em) {
+  main {
+    margin: 5rem 0;
+  }
+}
+body,
+main {
+  background-color: hsl(47, 88%, 63%);
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  padding: 1.6rem;
+  max-width: 33.6rem;
+  box-shadow: 0.8rem 0.8rem 0 black;
+}
+.card__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card__img {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1.6rem;
+}
+.card__text-area {
+  padding: 0;
+}
+.card__tag {
+  background-color: hsl(47, 88%, 63%);
+  display: inline-block;
+  border-radius: 0.4rem;
+  padding: 0.4rem 1.2rem;
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+.card__date {
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 7%);
+}
+.card__title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 1.6rem;
+  transition: all 0.3s;
+}
+.card__title:hover {
+  color: hsl(47, 88%, 63%);
+}
+.card__description {
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 42%);
+  margin-bottom: 1.6rem;
+}
+.card__author-box {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+}
+.card__author-img {
+  max-width: 3.2rem;
+  margin-right: 1.2rem;
+}
+.card__author-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+}/*# sourceMappingURL=main.css.map */
