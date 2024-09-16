@@ -46,7 +46,8 @@ main {
     margin-bottom: $bigSpacing;
     transition: all 0.3s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $sectionBgColor;
     }
   }
