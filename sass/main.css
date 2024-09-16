@@ -60,6 +60,7 @@ main {
   border-radius: 2rem;
   padding: 1.6rem;
   max-width: 33.6rem;
+  border: 0.1rem solid black;
   box-shadow: 0.8rem 0.8rem 0 black;
 }
 .card__inner {
@@ -97,7 +98,7 @@ main {
   margin-bottom: 1.6rem;
   transition: all 0.3s;
 }
-.card__title:hover {
+.card__title:hover, .card__title:focus {
   color: hsl(47, 88%, 63%);
 }
 .card__description {

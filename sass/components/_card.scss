@@ -8,6 +8,7 @@ main {
   border-radius: $cardBorderRadius;
   padding: $bigSpacing;
   max-width: 33.6rem;
+  border: 0.1rem solid black;
   box-shadow: $normalSpacing $normalSpacing 0 rgba($color: #000000, $alpha: 1);
 
   &__inner {
